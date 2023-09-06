@@ -11,25 +11,25 @@ Inside the "resources" directory, create a file named "application.properties." 
 ## Define the database type (choose either POSTGRESQL or MYSQL)
 spring.jpa.database=POSTGRESQL (or MYSQL)
 
-# Specify the platform (e.g., "postgresql" for PostgreSQL)
+## Specify the platform (e.g., "postgresql" for PostgreSQL)
 spring.sql.init.platform=platform name (e.g., "postgresql")
 
-# Database connection URL (replace "localhost," "5432," and "database name" with your database details)
+## Database connection URL (replace "localhost," "5432," and "database name" with your database details)
 spring.datasource.url=jdbc:postgresql://localhost:5432/database name
 
-# Database username
+## Database username
 spring.datasource.username=your database username
 
-# Database password
+## Database password
 spring.datasource.password=your password
 
-# Show SQL statements in the console
+## Show SQL statements in the console
 spring.jpa.show-sql=true
 
-# Configure Hibernate to create tables if they don't exist (use cautiously)
+## Configure Hibernate to create tables if they don't exist (use cautiously)
 spring.jpa.properties.hibernate.hbm2ddl.auto=create
 
-# Disable contextual LOB creation for PostgreSQL
+## Disable contextual LOB creation for PostgreSQL
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 
 lease make sure to replace the placeholders (platform name, localhost, 5432, database name, your database username, and your password) with the actual values for your specific database setup.
