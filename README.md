@@ -8,7 +8,7 @@ In the "src/main" directory of your Spring Boot project, create a new directory 
 Step 2: Create "application.properties"
 
 Inside the "resources" directory, create a file named "application.properties." This file will contain all the necessary configurations for JPA and the database. Below is an example configuration for PostgreSQL, but you can adjust it for your specific database system:
-# Define the database type (choose either POSTGRESQL or MYSQL)
+## Define the database type (choose either POSTGRESQL or MYSQL)
 spring.jpa.database=POSTGRESQL (or MYSQL)
 
 # Specify the platform (e.g., "postgresql" for PostgreSQL)
